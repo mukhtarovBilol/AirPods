@@ -1,0 +1,498 @@
+@import url(fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-weight: 500;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+ 
+ul{
+     list-style: none;
+}
+
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn{
+    max-width: 210px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+}
+
+
+
+/* header */
+
+
+
+.header{
+    background: url(../img/header/backcround-airpods.png)center center / cover no-repeat;    
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.header-site{
+    display: flex;
+    gap: 30px;
+}
+
+.header-nav{
+    display: flex;
+    background: #282828;
+    padding: 6px;
+    position: fixed;
+    width: 100%;
+}
+
+.header-list{
+    display: flex;
+    align-items: center; 
+    gap: 30px; 
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+@media(max-width:460px){
+    .header-list{
+        display: none;
+    }
+    
+    .header-burger{
+        display: flex;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-burger:hover ~ .header-list{
+        display: flex;
+    }
+
+    .burger-line{
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        position: relative;
+    }
+
+    .burger-line::after,
+    .burger-line::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        background: inherit;
+        width: 100%;
+        height: 100%;
+    }
+
+    .burger-line::after{
+        top: -10px;
+    }
+    
+    .burger-line::before{
+        top: 10px;
+    }
+}
+
+.header-list2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media(max-width:460px){
+    .header-list2{
+        display: none;
+    }
+  
+}
+
+.header-link{
+    color: #fff;
+    transition: 0.4s;
+}
+
+
+.header-link:hover{
+    color: navajowhite;
+}
+
+.header-title{
+    font-size: 100px;
+    color: #fff;
+}
+
+@media(max-width:576px){
+    .header-title{
+        font-size: 70px;
+    }
+}
+
+@media(max-width:414px){
+    .header-title{
+        font-size: 50px;
+    }
+}
+
+
+.header-pods{
+    font-size: 20px;
+    color: #171718;
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-left: 11px;
+}
+
+
+
+.header-content .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* header */
+
+
+/* section */
+
+
+
+main{
+    background: black;
+}
+
+
+
+.cards{
+    display: flex;
+}
+
+@media(max-width:992px){
+    .cards{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.product-subtitle{
+    max-width: 538px;
+    width: 100%;
+    font-size: 22px;
+    color: #fff;
+    padding: 63px 0;
+    gap: 30px;
+}
+
+.static{
+    max-width: 552px;
+    width: 100%;
+    padding: 30px 0;
+    margin-left: 30px;
+}
+
+@media(max-width:576px){
+    .static{
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 480px){
+    .static{
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 414px){
+    .static{
+        max-width: 300px;
+    }
+}
+
+@media(max-width:320px){
+    .static{
+        max-width: 250px;
+    }
+}
+
+.cards:nth-of-type(even){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+.product-subtitle2{
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    max-width: 540px;
+    width: 100%;
+    font-size: 22px;
+}
+
+
+
+.cards-subtitle{
+    color: #FFF;
+    font-size: 20px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+@media(max-width:992px){
+    .cards-subtitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 552px;
+        width: 100%;
+        margin: 50px 0;
+        
+    }
+
+    @media(max-width:320px){
+        .cards-subtitle{
+            max-width: 200px;
+        }
+    }
+}
+
+
+.cards-subtitle3{
+    color: #FFF;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+@media(max-width: 992px){
+    .cards-subtitle3{
+        max-width: 552px;
+        width: 100%;
+        padding: 60px 0;
+    }
+}
+
+@media(max-width: 576px){
+    .cards-subtitle3{
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 480px){
+    .cards-subtitle3{
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 414px){
+    .cards-subtitle3{
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 320px){
+    .cards-subtitle3{
+        max-width: 200px;
+    }
+}
+
+.airpods{
+    max-width: 268px;
+    width: 100%;
+    padding: 60px 0;
+    
+}
+
+@media(max-width: 992px){
+    .airpods{
+       padding: 0;
+      
+    }
+}
+
+
+.card{
+    background: #fff;
+    max-width: 255px;
+    width: 100%;
+    padding: 15px 58px;
+    border-radius: 6px;
+    margin-left: 25px;
+    margin-bottom: 55px;
+
+}
+
+@media(max-width: 850px){
+    .card{
+        margin-left: 15px;
+    }
+}
+
+.iphones{
+text-align: center;
+}
+
+
+.iphone11pro-title{
+    font-size: 20px;
+    font-family: "Montserrat";
+     font-weight: 700;
+     max-width: 138px;
+     width: 100%;
+    margin-bottom: 10px;
+}
+
+
+@media(max-width: 850px){
+    .iphone11pro-title{
+        max-width: 200px;
+    }
+}
+
+.iphone11pro-subtitle{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.view{
+    font-family: "Montserrat";
+    font-weight: 700;
+    padding: 7px;
+    text-align: center;
+
+}
+
+.iphone .container{
+    display: flex;
+}
+
+@media(max-width:768px){
+    .iphone .container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+ .iphone11{
+    max-width: 99px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 180px;
+}
+
+@media(max-width: 850px){
+    .iphone11{
+        height: 100px;
+    }
+}
+
+
+
+
+/* section */
+
+/* footer */
+
+
+.footer{
+    background: #282828;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 81px ;
+    gap: 30px;
+}
+
+@media(max-width: 480px){
+    .footer-nav{
+        padding: 81px 80px;
+        gap: 15px;
+    }
+}
+
+@media(max-width: 414px){
+    .footer-nav{
+        flex-direction: column;
+    }
+}
+
+.footer-list{
+    display: flex;
+    gap: 30px;
+}
+
+@media(max-width: 480px){
+    .footer-list{
+        gap: 15px;
+    }
+}
+
+.footer-link{
+    color: #fff;
+    transition: 0.4s;
+}
+
+.footer-link:hover{
+    color: navajowhite;
+}
+
+.footer-list2{
+    display: flex;
+    gap: 30px;
+}
+
+@media(max-width: 480px){
+    .footer-list2{
+        gap: 15px;
+    }
+}
+
