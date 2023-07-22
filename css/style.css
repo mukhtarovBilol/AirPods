@@ -73,7 +73,6 @@ ul{
 
 @media(max-width:460px){
     .header-list{
-        display: none;
         position: fixed;
         left: 0;
         top: -100%;
