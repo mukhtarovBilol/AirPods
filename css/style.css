@@ -141,7 +141,8 @@ ul{
     .burger-line::before{
         top: 10px;
     }
-}
+
+
 
 .header-list2{
     display: flex;
